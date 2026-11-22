@@ -1,0 +1,6 @@
+_cliente/
+_site/
+.cache/
+node_modules/
+.DS_Store
+_propostas/

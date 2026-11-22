@@ -1,0 +1,58 @@
+# Pré-visualização no GitHub Pages (https://renatovalente5.github.io/pneus-auto-confianca/), com noindex: as três
+# propostas de desenho, a escolhida na raiz e as outras em /propostas/<letra>/ (content/site.json → "variante").
+# Cada envio para a main constrói as imagens, o site e as provas, e publica.
+# Quando houver domínio (a firma já tem pneusautoconfianca.pt): --producao --url=https://pneusautoconfianca.pt, sem
+# --propostas nem --base, um CNAME, e o sitemap passa a sair.
+name: Publicar
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  construir:
+    name: Construir
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pillow
+        run: pip install pillow==11.3.0
+      - name: Cache das imagens
+        uses: actions/cache@v4
+        with:
+          path: .cache/imagens
+          key: imagens-${{ hashFiles('media/**', 'scripts/imagens.py', 'content/fotos.json') }}
+          restore-keys: imagens-
+      - name: Imagens
+        run: python3 scripts/imagens.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Construir o site
+        run: node scripts/build.mjs --propostas --base=/pneus-auto-confianca --url=https://renatovalente5.github.io/pneus-auto-confianca
+      - name: Testar
+        run: node scripts/testar.mjs --base=/pneus-auto-confianca
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  publicar:
+    name: Publicar no GitHub Pages
+    needs: construir
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publicar.outputs.page_url }}
+    steps:
+      - id: publicar
+        uses: actions/deploy-pages@v4

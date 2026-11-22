@@ -1,0 +1,465 @@
+{
+  "capa": {
+    "titulo": "Pneus novos e semi-novos em Fafe",
+    "frase": "Testados, com garantia e montados por nós. E ainda jantes, alinhamento e revisões na mesma oficina."
+  },
+  "areas": [
+    {
+      "id": "novos",
+      "nome": "Pneus novos",
+      "foto": "pneus-novos-etiquetas",
+      "pagina": "/pneus/#novos"
+    },
+    {
+      "id": "semi-novos",
+      "nome": "Pneus semi-novos",
+      "foto": "pneus-semi-novos",
+      "pagina": "/pneus/#semi-novos"
+    },
+    {
+      "id": "jantes",
+      "nome": "Jantes",
+      "foto": "jantes-bmw-caixas",
+      "pagina": "/jantes/"
+    },
+    {
+      "id": "oficina",
+      "nome": "Oficina",
+      "foto": "bmw-530e-elevador",
+      "pagina": "/oficina/"
+    }
+  ],
+  "medidas": {
+    "larguras": [
+      135,
+      145,
+      155,
+      165,
+      175,
+      185,
+      195,
+      205,
+      215,
+      225,
+      235,
+      245,
+      255,
+      265,
+      275,
+      285,
+      295,
+      305,
+      315,
+      325,
+      335
+    ],
+    "perfis": [
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85
+    ],
+    "jantes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "exemplo": {
+      "largura": 205,
+      "perfil": 55,
+      "jante": 16,
+      "carga": "91",
+      "velocidade": "V"
+    },
+    "tipos": [
+      {
+        "id": "novos",
+        "nome": "Novos"
+      },
+      {
+        "id": "semi-novos",
+        "nome": "Semi-novos"
+      },
+      {
+        "id": "os-dois",
+        "nome": "Os dois"
+      }
+    ],
+    "quantidades": [
+      1,
+      2,
+      4
+    ]
+  },
+  "marcas": [
+    "Davanti",
+    "Michelin",
+    "Continental",
+    "BFGoodrich",
+    "Falken",
+    "Yokohama",
+    "Cooper",
+    "Goodride"
+  ],
+  "servicos": [
+    {
+      "grupo": "Pneus e rodas",
+      "icone": "pneu",
+      "itens": [
+        [
+          "Montagem e equilibragem",
+          "Com pesos da cor da jante, se quiser."
+        ],
+        [
+          "Reparação de furos",
+          ""
+        ],
+        [
+          "Válvulas e sensores de pressão (TPMS)",
+          "Substituição e programação."
+        ],
+        [
+          "Pneus para elétricos e híbridos",
+          "Adequados ao peso e ao binário destes carros."
+        ]
+      ]
+    },
+    {
+      "grupo": "Direção",
+      "icone": "volante",
+      "itens": [
+        [
+          "Alinhamento da direção",
+          ""
+        ],
+        [
+          "Foles e ponteiras da direção",
+          ""
+        ]
+      ]
+    },
+    {
+      "grupo": "Manutenção",
+      "icone": "chave",
+      "itens": [
+        [
+          "Revisões",
+          "Óleo e filtros."
+        ],
+        [
+          "Travões",
+          "Bombas e tubos."
+        ],
+        [
+          "Baterias",
+          ""
+        ],
+        [
+          "Escovas, lâmpadas e kit LED",
+          ""
+        ],
+        [
+          "Lavagem e tratamento do chassis",
+          ""
+        ]
+      ]
+    },
+    {
+      "grupo": "Jantes",
+      "icone": "jante",
+      "itens": [
+        [
+          "Reparação de jantes",
+          ""
+        ],
+        [
+          "Mudança de cor",
+          "Também das pinças e dos cubos dos travões."
+        ],
+        [
+          "Troca e aumento de aro",
+          "Por exemplo, de 14″ para 16″."
+        ]
+      ]
+    }
+  ],
+  "recolha": "Sem tempo? Marque a hora e vamos buscar o carro.",
+  "jantes": {
+    "venda": [
+      "novas",
+      "semi-novas",
+      "usadas",
+      "originais"
+    ],
+    "servicos": [
+      {
+        "id": "comprar",
+        "nome": "Comprar jantes"
+      },
+      {
+        "id": "reparar",
+        "nome": "Reparar"
+      },
+      {
+        "id": "cor",
+        "nome": "Mudar a cor"
+      },
+      {
+        "id": "pincas",
+        "nome": "Pintar as pinças"
+      }
+    ],
+    "aros": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "galeria": [
+      "jantes-bmw-m",
+      "jantes-mercedes-caixas",
+      "jante-vw-bicolor",
+      "jantes-bbs",
+      "jante-preta-raios",
+      "jantes-porsche-20",
+      "jantes-vw-caixas",
+      "jante-citroen",
+      "jantes-pretas-novas"
+    ]
+  },
+  "trabalhos": [
+    {
+      "id": "mercedes-classe-c-coupe",
+      "carro": "Mercedes Classe C Coupé",
+      "feito": "Jantes desportivas com pneus de alta performance, montagem e equilibragem.",
+      "fotos": [
+        "mercedes-c-coupe",
+        "jante-preta-pinca-laranja",
+        "pinca-amg-laranja",
+        "mercedes-c-coupe-lateral"
+      ],
+      "data": "2026-04",
+      "tipos": [
+        "jantes",
+        "pneus"
+      ]
+    },
+    {
+      "id": "bmw-serie-1",
+      "carro": "BMW Série 1",
+      "feito": "Jantes reparadas com mudança de cor, pinças e cubos dos travões pintados, pneus novos.",
+      "fotos": [
+        "bmw-serie1",
+        "bmw-pinca-azul"
+      ],
+      "data": "2025-12",
+      "tipos": [
+        "jantes",
+        "pneus"
+      ]
+    },
+    {
+      "id": "audi-a5",
+      "carro": "Audi A5",
+      "feito": "Pneus Davanti, com montagem.",
+      "fotos": [
+        "audi-a5",
+        "audi-pinca-vermelha",
+        "montagem-davanti"
+      ],
+      "data": "2025-12",
+      "tipos": [
+        "pneus"
+      ]
+    },
+    {
+      "id": "mercedes-classe-a",
+      "carro": "Mercedes Classe A",
+      "feito": "Jantes de 19″, pinças pintadas, sensores de pressão programados, pneus Davanti 225/40 R19 e alinhamento.",
+      "fotos": [
+        "mercedes-a-jantes",
+        "mercedes-a-roda"
+      ],
+      "data": "2025-05",
+      "tipos": [
+        "jantes",
+        "pneus",
+        "oficina"
+      ]
+    },
+    {
+      "id": "bmw-530e",
+      "carro": "BMW 530e",
+      "feito": "Michelin Pilot Sport 4 ZP (run-flat): 245/40 R19 à frente e 275/35 R19 atrás.",
+      "fotos": [
+        "bmw-530e-oficina",
+        "bmw-530e-elevador",
+        "bmw-530e-traseira",
+        "michelin-etiqueta"
+      ],
+      "data": "2025-04",
+      "tipos": [
+        "pneus"
+      ]
+    },
+    {
+      "id": "vw-id4",
+      "carro": "Volkswagen ID.4",
+      "feito": "Pneus Continental 235/55 R19 e 255/50 R19.",
+      "fotos": [
+        "vw-id4",
+        "continental-etiqueta"
+      ],
+      "data": "2025-03",
+      "tipos": [
+        "pneus"
+      ]
+    },
+    {
+      "id": "renault-clio",
+      "carro": "Renault Clio",
+      "feito": "Pneus Davanti 205/45 R17, jantes reparadas, fole e ponteira da direção.",
+      "fotos": [
+        "clio-na-oficina",
+        "davanti-dx640"
+      ],
+      "data": "2025-02",
+      "tipos": [
+        "pneus",
+        "jantes",
+        "oficina"
+      ]
+    },
+    {
+      "id": "datsun-1200",
+      "carro": "Datsun 1200",
+      "feito": "Quatro pneus 165/70 R12, bomba e tubo dos travões, bateria, lavagem e tratamento do chassis.",
+      "fotos": [
+        "datsun-1200",
+        "datsun-1200-roda"
+      ],
+      "data": "2025-02",
+      "tipos": [
+        "pneus",
+        "oficina"
+      ]
+    },
+    {
+      "id": "vw-golf-r",
+      "carro": "Volkswagen Golf R",
+      "feito": "Pneus Davanti Protoura Sport 235/35 R19.",
+      "fotos": [
+        "golf-r-davanti"
+      ],
+      "data": "2024-08",
+      "tipos": [
+        "pneus"
+      ]
+    },
+    {
+      "id": "jeep-wrangler",
+      "carro": "Jeep Wrangler 4x4",
+      "feito": "Quatro pneus BFGoodrich All-Terrain.",
+      "fotos": [
+        "jeep-wrangler",
+        "bfgoodrich-all-terrain"
+      ],
+      "data": "2023-12",
+      "tipos": [
+        "pneus"
+      ]
+    },
+    {
+      "id": "honda-civic-type-r",
+      "carro": "Honda Civic Type R",
+      "feito": "Dois pneus Falken.",
+      "fotos": [
+        "civic-type-r",
+        "civic-type-r-falken"
+      ],
+      "data": "2023-11",
+      "tipos": [
+        "pneus"
+      ]
+    },
+    {
+      "id": "mercedes-benz",
+      "carro": "Mercedes-Benz",
+      "feito": "Dois pneus Davanti 225/40 R18.",
+      "fotos": [
+        "mercedes-no-elevador",
+        "davanti-jante-preta"
+      ],
+      "data": "2023-11",
+      "tipos": [
+        "pneus"
+      ]
+    },
+    {
+      "id": "bmw-m5-competition",
+      "carro": "BMW M5 Competition",
+      "feito": "Pneus Michelin Pilot Sport 4 S.",
+      "fotos": [
+        "bmw-m5",
+        "bmw-m5-roda",
+        "bmw-m5-michelin"
+      ],
+      "data": "2022-08",
+      "tipos": [
+        "pneus"
+      ]
+    },
+    {
+      "id": "audi-rs5",
+      "carro": "Audi RS5",
+      "feito": "Pneus Davanti.",
+      "fotos": [
+        "audi-rs5",
+        "audi-rs5-davanti"
+      ],
+      "data": "2022-08",
+      "tipos": [
+        "pneus"
+      ]
+    }
+  ],
+  "criticas": [
+    {
+      "nome": "André M.",
+      "data": "2026-11",
+      "texto": "Ja sou cliente há bastante tempo lá.. Empresa de confiança.. Seja pneus ou revisões, sempre com excelência e profissionalismo.. fora a amizade para com eles.. Aconselho.."
+    },
+    {
+      "nome": "José F.",
+      "data": "2026-11",
+      "texto": "Mudança das quatro rodas do meu veículo (Mercedes GLC) como previsto, trabalho executado na perfeição, com muita seriedade e dedicação. Recomendo"
+    },
+    {
+      "nome": "Filipe L.",
+      "data": "2026-11",
+      "texto": "Excelente, faz justiça ao nome, mesmo de confiança serviços Top, atendimento Top ...tudo top! recomendo. Abraço para toda a equipa \"Pneus Confiança\""
+    }
+  ]
+}

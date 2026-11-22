@@ -1,0 +1,94 @@
+{
+  "marca": "Pneus Auto-Confiança",
+  "marcaCurta": "Auto-Confiança",
+  "titulo": "Pneus Auto-Confiança — pneus novos e semi-novos, jantes e oficina em Fafe",
+  "descricao": "Pneus novos e semi-novos em Fafe, testados e com garantia, montados por nós. Jantes, alinhamento, revisões e baterias na mesma oficina. Peça o preço pelo WhatsApp.",
+  "lema": "A confiança que o seu carro merece.",
+  "telefone": "932 832 915",
+  "fixo": "253 192 308",
+  "whatsapp": "351932832915",
+  "email": "pneusautoconfianca@sapo.pt",
+  "instagram": "pneus_auto_confianca_oficina",
+  "facebook": "https://www.facebook.com/Pneusautoconfianca/",
+  "morada": {
+    "rua": "Rua de Calvelos, 696",
+    "codigoPostal": "4820-211",
+    "localidade": "Fafe",
+    "concelho": "Fafe",
+    "distrito": "Braga"
+  },
+  "coordenadas": "41.459951,-8.1811885",
+  "mapa": "https://maps.google.com/?cid=5712773726655312094",
+  "google": {
+    "nota": 4.7,
+    "opinioes": 108,
+    "conferido": "2026-11-22",
+    "url": "https://www.google.com/maps/place/Pneus+Auto-Confian%C3%A7a/@41.459951,-8.1811885,17z/data=!4m8!3m7!1s0xd24e88626f2a2bb:0x4f47d96fd37970de!8m2!3d41.459951!4d-8.1811885!9m1!1b1"
+  },
+  "horario": [
+    {
+      "dias": "Segunda a quinta",
+      "codigos": [
+        "Mo",
+        "Tu",
+        "We",
+        "Th"
+      ],
+      "turnos": [
+        [
+          "09:00",
+          "12:00"
+        ],
+        [
+          "14:00",
+          "18:30"
+        ]
+      ],
+      "curto": "Seg. a qui."
+    },
+    {
+      "dias": "Sexta",
+      "codigos": [
+        "Fr"
+      ],
+      "turnos": [
+        [
+          "09:00",
+          "12:00"
+        ],
+        [
+          "14:00",
+          "19:00"
+        ]
+      ],
+      "curto": "Sexta"
+    },
+    {
+      "dias": "Sábado",
+      "codigos": [
+        "Sa"
+      ],
+      "turnos": [
+        [
+          "09:00",
+          "13:00"
+        ]
+      ],
+      "curto": "Sábado"
+    },
+    {
+      "dias": "Domingo",
+      "codigos": [
+        "Su"
+      ],
+      "turnos": [],
+      "curto": "Domingo"
+    }
+  ],
+  "empresa": {
+    "firma": "Gabriel Pereira Costa, Unipessoal, Lda.",
+    "nif": "518333850",
+    "sede": "Rua de Calvelos, 696 C/V, 4820-211 Fafe"
+  },
+  "variante": "a"
+}

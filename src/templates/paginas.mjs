@@ -55,7 +55,7 @@ function cabecalho({ titulo, frase, acoes = '', classe = '' }) {
 }
 
 const seccao = ({ id = '', classe = '', titulo, sub = '', ligacao = '', corpo }) => `<section class="seccao${classe ? ' ' + classe : ''}"${id ? ` id="${id}"` : ''}${titulo ? ` aria-labelledby="t-${id || classe.split(' ')[0]}"` : ''}>
-  ${titulo ? `<div class="seccao__cab contentor"><div><h2 class="seccao__titulo" id="t-${id || classe.split(' ')[0]}">${titulo}</h2>${sub ? `<p class="seccao__sub">${sub}</p>` : ''}</div>${ligacao}</div>` : ''}
+  ${titulo ? `<div class="seccao__cab${sub ? '' : ' seccao__cab--so-titulo'} contentor"><div><h2 class="seccao__titulo" id="t-${id || classe.split(' ')[0]}">${titulo}</h2>${sub ? `<p class="seccao__sub">${sub}</p>` : ''}</div>${ligacao}</div>` : ''}
   ${corpo}
 </section>`;
 
@@ -511,7 +511,7 @@ export function contactos(ctx) {
     <ul class="contactos__lista" role="list">
       <li class="contacto"><span class="circulo-icone">${icone.whatsapp}</span><div><h2>WhatsApp</h2><a href="${wa(ctx)}" target="_blank" rel="noopener">Enviar uma mensagem</a></div></li>
       <li class="contacto"><span class="circulo-icone">${icone.telefone}</span><div><h2>Telefone</h2><p>${telefoneHtml(site.telefone, { frase: 'com-a' })}</p><p>${telefoneHtml(site.fixo, { frase: 'com-a' })}</p></div></li>
-      <li class="contacto"><span class="circulo-icone">${icone.email}</span><div><h2>Email</h2><a href="mailto:${site.email}">${esc(site.email)}</a></div></li>
+      <li class="contacto"><span class="circulo-icone">${icone.email}</span><div><h2>Email</h2><a href="mailto:${site.email}">${esc(site.email).replace('@', '@<wbr>')}</a></div></li>
       <li class="contacto"><span class="circulo-icone">${icone.local}</span><div><h2>Morada</h2><p>${moradaLinha(site)}</p><a href="${site.mapa}" target="_blank" rel="noopener">Como chegar</a></div></li>
       <li class="contacto contacto--horario"><span class="circulo-icone">${icone.relogio}</span><div><h2>Horário ${estado(site)}</h2>${horarioTabela(site)}</div></li>
       <li class="contacto"><span class="circulo-icone">${icone.instagram}</span><div><h2>Redes</h2><p><a href="https://www.instagram.com/${site.instagram}/" target="_blank" rel="noopener">Instagram</a> · <a href="${site.facebook}" target="_blank" rel="noopener">Facebook</a></p></div></li>

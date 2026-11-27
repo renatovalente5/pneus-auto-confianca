@@ -4,14 +4,30 @@
   var d = document, h = d.documentElement;
 
   // ---------- cabeçalho: sombra ao descer; botão do WhatsApp depois do primeiro ecrã ----------
+  // O botão do WhatsApp e a barra das propostas (só na pré-visualização) estão fixos em baixo e saem quando chega o
+  // rodapé, para não taparem a última linha dele: assim o rodapé não precisa de espaço vazio por baixo.
   var topo = d.querySelector('[data-topo]');
   var flutuante = d.querySelector('[data-flutuante]');
+  var rodape = d.querySelector('.rodape');
+  var legal = d.querySelector('.rodape__legal');
+  var barra = d.querySelector('.propostas');
   function aoRolar() {
-    var y = window.scrollY || 0;
+    var y = window.scrollY || 0, alto = window.innerHeight;
     if (topo) topo.classList.toggle('topo--descido', y > 8);
-    if (flutuante) flutuante.classList.toggle('flutuante--visivel', y > 360 && !h.classList.contains('menu-aberto'));
+    if (flutuante) {
+      // o rodapé (que já tem o WhatsApp) chegou à altura do botão
+      var chegou = rodape && rodape.getBoundingClientRect().top < alto - (parseFloat(getComputedStyle(flutuante).bottom) || 0);
+      flutuante.classList.toggle('flutuante--visivel', y > 360 && !h.classList.contains('menu-aberto') && !chegou);
+    }
+    if (barra && legal) {
+      var r = legal.getBoundingClientRect();
+      barra.classList.toggle('propostas--escondida', r.top < alto && r.bottom > alto - 80);
+    }
   }
   addEventListener('scroll', aoRolar, { passive: true });
+  addEventListener('resize', aoRolar);
+  // a página pode mudar de altura sem se rolar (os filtros dos trabalhos, por exemplo)
+  if ('ResizeObserver' in window) new ResizeObserver(function () { aoRolar(); }).observe(d.body);
   aoRolar();
 
   // ---------- menu do telemóvel ----------
